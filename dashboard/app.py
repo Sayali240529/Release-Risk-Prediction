@@ -35,7 +35,8 @@ RISK_WORDS = {"hotfix", "revert", "rollback", "migration", "security", "regressi
 def text_to_features(text: str) -> dict:
     words = [w.strip(".,:;!?()[]\"'").lower() for w in text.split()]
     hits = sum(w in RISK_WORDS for w in words)
-    return {"commit_message_risk_keywords": hits, "text_risk_score": min(1.0, hits / 4)}
+    return {"risk_keyword_count": hits,
+        "text_risk_score": min(1.0, hits / 4),}
 
 
 def feature_inputs(init: dict, prefix: str) -> dict:
