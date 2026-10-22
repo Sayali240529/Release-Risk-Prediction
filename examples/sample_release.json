@@ -1,0 +1,11 @@
+{
+  "commit_churn": 1800,
+  "files_modified": 24,
+  "directory_entropy": 2.1,
+  "author_risk_score": 0.35,
+  "ci_warning_count": 28,
+  "ci_test_duration_delta": 0.6,
+  "flaky_test_flag": 1,
+  "text_risk_score": 0.75,
+  "commit_message_risk_keywords": 3
+}
