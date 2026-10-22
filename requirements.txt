@@ -1,0 +1,12 @@
+pydriller
+GitPython
+pandas
+numpy
+scikit-learn
+catboost
+shap
+sentence-transformers
+joblib
+streamlit
+plotly
+requests
